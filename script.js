@@ -1,3 +1,8 @@
+window.onload = function () {
+    content.classList.add('roundCorners');
+}
+
+const content = document.querySelector('.content')
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {

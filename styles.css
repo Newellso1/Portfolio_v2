@@ -3,9 +3,9 @@ body  {
     color: #2c2323de;
     padding: 0;
     margin: 0;
-    display: flex column;
+    display: flex;
     align-items: center;
-    margin: 50px 10vw;
+    margin: 50px 15vw;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -14,7 +14,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh
+    min-height: 700px;
+    border: 1px solid;
 }
 
 .content {
@@ -22,16 +23,33 @@ section {
     min-height: 100vh;
     background-color: #ffe9d4;
     box-shadow: 0 0 15px #ffe9d435;
+    border-radius: 3px;
+    transition: all 1s ease-in;
+    transition-delay: 0.1s;
+    padding: 20px;
+}
+
+.roundCorners {
     border-radius: 20px;
+}
+
+/* About page */
+
+.about p {
+    max-width: 600px;
+    padding: 0 20px
 }
 
 .hidden {
     opacity: 0;
     transition: opacity 2s ease-in;
+    text-align: center;
 }
 
 .show {
     opacity: 1;
 }
+
+
 
 
