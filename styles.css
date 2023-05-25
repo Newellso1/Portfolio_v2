@@ -24,7 +24,7 @@ section {
     background-color: #ffe9d4;
     box-shadow: 0 0 15px #ffe9d435;
     transition: all 1s ease-in;
-    transition-delay: 0.1s;
+    border-radius: 2px;
     padding: 20px;
 }
 
@@ -44,8 +44,29 @@ section {
     }
 }
 
+@keyframes slide-right {
+    0% {
+        right: -100%
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.slide-left {
+    animation: slide-left 1s ease;
+}
+
+.slide-right {
+    animation: slide-right 1s ease;
+}
 
 /* About page */
+
+.about h1 {
+    position: relative;
+}
 
 
 .about p {

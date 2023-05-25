@@ -20,5 +20,12 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-// Function that adds slide-left animation to the h1 elements within the odd sections
+// Function that adds slide-left animation to relevant class
 
+
+const aboutDiv = document.querySelector('.about');
+const aboutTitle = aboutDiv.querySelector('.title');
+
+if (aboutDiv.classList.contains('show')) {
+  aboutTitle.classList.add('slide-left');
+}
