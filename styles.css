@@ -1,4 +1,4 @@
-body  {
+body {
     background-color: #271f1f;
     color: #2c2323de;
     padding: 0;
@@ -15,7 +15,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 700px;
-    border: 1px solid;
+    border-left: px solid;
 }
 
 .content {
@@ -23,7 +23,6 @@ section {
     min-height: 100vh;
     background-color: #ffe9d4;
     box-shadow: 0 0 15px #ffe9d435;
-    border-radius: 3px;
     transition: all 1s ease-in;
     transition-delay: 0.1s;
     padding: 20px;
@@ -33,11 +32,26 @@ section {
     border-radius: 20px;
 }
 
+/* Slide in animations */
+
+@keyframes slide-left {
+    0% {
+        left: -100%;
+    }
+    
+    100% {
+        left: 0;
+    }
+}
+
+
 /* About page */
 
+
 .about p {
+    position: relative;
     max-width: 600px;
-    padding: 0 20px
+    padding: 0 20px;
 }
 
 .hidden {
@@ -49,7 +63,3 @@ section {
 .show {
     opacity: 1;
 }
-
-
-
-
