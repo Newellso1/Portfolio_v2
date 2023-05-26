@@ -64,10 +64,13 @@ section {
 
 /* About page */
 
-.about h1 {
+.title-left {
     position: relative;
 }
 
+.title-right {
+    position: relative;
+}
 
 .about p {
     position: relative;
@@ -77,9 +80,11 @@ section {
 
 .hidden {
     opacity: 0;
-    transition: opacity 2s ease-in;
+    transition: opacity 1s ease-in;
     text-align: center;
 }
+
+
 
 .show {
     opacity: 1;

@@ -11,6 +11,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
+
         } else {
             entry.target.classList.remove('show');
         }
@@ -20,12 +21,35 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-// Function that adds slide-left animation to relevant class
+
+// Intersection Observer slides titles in from left;
 
 
-const aboutDiv = document.querySelector('.about');
-const aboutTitle = aboutDiv.querySelector('.title');
+const leftObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slide-left');
 
-if (aboutDiv.classList.contains('show')) {
-  aboutTitle.classList.add('slide-left');
-}
+        } else {
+            entry.target.classList.remove('slide-left');
+        }
+    })
+})
+
+const slideLeft = document.querySelectorAll('.title-left')
+slideLeft.forEach((el) => leftObserver.observe(el));
+
+// // Intersection Observer that slides titles in from right;
+
+const rightObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slide-right');
+        } else {
+            entry.target.classList.remove('slide-right');
+        }
+    })
+})
+
+const slideRight = document.querySelectorAll('.title-right');
+slideRight.forEach((el) => rightObserver.observe(el));
