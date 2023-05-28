@@ -38,7 +38,7 @@ section {
     0% {
         left: -100%;
     }
-    
+
     100% {
         left: 0;
     }
@@ -72,18 +72,52 @@ section {
     position: relative;
 }
 
-.about p {
+p {
     position: relative;
     max-width: 600px;
     padding: 0 20px;
 }
 
+.about img {
+    width: 175px;
+    border-radius: 10px;
+    border: 5px solid #271f1f;
+    box-shadow: 0 0 10px #271f1f70;
+}
+
+.about a {
+    color: #271f1f;
+}
+
+/* Project Page */
+
+.projectContainer {
+    display: flex column;
+    justify-content: space-around;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+.project img {
+    width: 150px
+}
+
+.project p {
+    font-size: 14px;
+    text-align: start;
+}
+/* Styles to hide and show */
 .hidden {
     opacity: 0;
     transition: opacity 1s ease-in;
     text-align: center;
 }
-
 
 
 .show {
