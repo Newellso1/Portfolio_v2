@@ -1,3 +1,8 @@
+* {
+    scroll-behavior: smooth;
+    scroll-snap-type:mandatory;
+}
+
 body {
     background-color: #271f1f;
     color: #2c2323de;
@@ -72,7 +77,7 @@ section {
     position: relative;
 }
 
-p {
+.about p {
     position: relative;
     max-width: 600px;
     padding: 0 20px;
@@ -85,7 +90,7 @@ p {
     box-shadow: 0 0 10px #271f1f70;
 }
 
-.about a {
+a {
     color: #271f1f;
 }
 
@@ -93,12 +98,11 @@ p {
 
 .projectContainer {
     display: flex column;
-    justify-content: space-around;
 }
 
 .project {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 200px;
 
@@ -111,7 +115,10 @@ p {
 .project p {
     font-size: 14px;
     text-align: start;
+    max-width: 500px;
 }
+
+
 /* Styles to hide and show */
 .hidden {
     opacity: 0;

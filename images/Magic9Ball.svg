@@ -25,15 +25,27 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:lockguides="true"
-     inkscape:zoom="0.72159091"
-     inkscape:cx="319.43307"
-     inkscape:cy="340.22047"
+     inkscape:zoom="1.9756563"
+     inkscape:cx="138.43501"
+     inkscape:cy="147.03974"
      inkscape:window-width="1920"
      inkscape:window-height="997"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="66.157336,93.588286"
+       orientation="1,0"
+       id="guide10130"
+       inkscape:locked="true" />
+    <sodipodi:guide
+       position="94.414821,65.933447"
+       orientation="0,-1"
+       id="guide10132"
+       inkscape:locked="true" />
+  </sodipodi:namedview>
   <defs
      id="defs2">
     <rect
@@ -61,13 +73,13 @@
        r="29.460485" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-2.4593567,-4.9717886)"
+       transform="matrix(0.26458333,0,0,0.26458333,-2.4428944,-5.2523344)"
        id="text3164"
        style="font-size:96px;text-align:center;white-space:pre;shape-inside:url(#rect3166);fill:#271f1f;fill-opacity:1;fill-rule:evenodd;stroke:#271f1f;stroke-width:9.07087;stroke-dasharray:none;stroke-opacity:1"><tspan
          x="228.35645"
          y="304.52539"
-         id="tspan4336"><tspan
+         id="tspan10148"><tspan
            style="font-family:'Noto Sans Mahajani';-inkscape-font-specification:'Noto Sans Mahajani'"
-           id="tspan4334">8</tspan></tspan></text>
+           id="tspan10146">8</tspan></tspan></text>
   </g>
 </svg>

@@ -16,7 +16,11 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('show');
         }
     })
-})
+
+},{
+ threshold: 0.7,
+});
+
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
@@ -34,7 +38,7 @@ const leftObserver = new IntersectionObserver((entries) => {
             entry.target.classList.remove('slide-left');
         }
     })
-})
+},);
 
 const slideLeft = document.querySelectorAll('.title-left')
 slideLeft.forEach((el) => leftObserver.observe(el));
@@ -49,7 +53,8 @@ const rightObserver = new IntersectionObserver((entries) => {
             entry.target.classList.remove('slide-right');
         }
     })
-})
+}, );
 
 const slideRight = document.querySelectorAll('.title-right');
 slideRight.forEach((el) => rightObserver.observe(el));
+
