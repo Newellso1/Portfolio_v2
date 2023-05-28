@@ -118,6 +118,15 @@ a {
     max-width: 500px;
 }
 
+/* Skills Page */
+
+.skills ol {
+    text-align: start;    
+}
+
+.emojis {
+    font-size: 40px;
+}
 
 /* Styles to hide and show */
 .hidden {
