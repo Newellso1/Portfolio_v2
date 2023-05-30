@@ -19,18 +19,17 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
-    border-left: px solid;
+    height: 90vh;
 }
 
 .content {
     width: 100%;
-    min-height: 100vh;
     background-color: #ffe9d4;
     box-shadow: 0 0 15px #ffe9d435;
     transition: all 1s ease-in;
     border-radius: 2px;
     padding: 20px;
+    gap: 40px;
 }
 
 .roundCorners {
@@ -69,6 +68,14 @@ section {
 
 /* About page */
 
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .title-left {
     position: relative;
 }
@@ -81,13 +88,22 @@ section {
     position: relative;
     max-width: 600px;
     padding: 0 20px;
+    margin-top: -5px;
 }
 
 .about img {
     width: 175px;
-    border-radius: 10px;
+}
+
+.profilePicture {
     border: 5px solid #271f1f;
+    border-radius: 10px;
     box-shadow: 0 0 10px #271f1f70;
+}
+
+.languages {
+    margin: 10px 0 0 0;
+    opacity: 90%
 }
 
 a {
@@ -124,8 +140,24 @@ a {
     text-align: start;    
 }
 
+
 .emojis {
     font-size: 40px;
+}
+
+.blurred {
+    filter: blur(2px);
+    transition: all 1s ease;
+}
+
+.blurred:hover {
+    filter: blur(0px);
+}
+
+/* Styles for future */
+
+.future p {
+    max-width: 600px;
 }
 
 /* Styles to hide and show */
