@@ -159,6 +159,10 @@ a {
     max-width: 600px;
 }
 
+.contact p {
+    max-width: 600px;
+}
+
 /* Styles to hide and show */
 .hidden {
     opacity: 0;
