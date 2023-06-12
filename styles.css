@@ -174,3 +174,11 @@ a {
 .show {
     opacity: 1;
 }
+
+/* Media Query for Mobile */
+
+@media only screen and (max-width: 480px) {
+    .body {
+     
+    }
+}
